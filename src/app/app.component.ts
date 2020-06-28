@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -22,4 +23,14 @@ export class AppComponent {
   srcVideoLocation(event) {
     this.srcVideoLocation = event;
   }
+  loadComp=false;
+  constructor (private router:Router) { }
+  onLogin(){
+    this.loadComp = true;
+  }
+
+  toDisplay(){
+    return this.loadComp===false? 'visible' : 'hidden';
+  }
+
 }

@@ -4,3 +4,6 @@
   .ui.menu:last-child {
     margin-bottom: 110px;
   }
+.container {
+    margin-top: 40px ;
+}

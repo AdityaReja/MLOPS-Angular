@@ -12,6 +12,9 @@ import { NgbdModalContent } from './video-file-upload/video-file-upload.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
+import { StartProjComponent } from './start-proj/start-proj.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     VideoPlayerComponent,
     AudioPlayerComponent,
     VideoFileUploadComponent,
-    NgbdModalContent
+    NgbdModalContent,
+    StartProjComponent,
+    NavBarComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
