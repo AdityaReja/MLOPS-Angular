@@ -9,13 +9,25 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { DocInputComponent } from './doc-input/doc-input.component';
 import { ImageInputComponent } from './image-input/image-input.component';
 import { SharedModule } from '../shared/shared.module';
+import { VideoPlayerComponent } from './video-input/video-player/video-player.component';
+import { VideoFileUploadComponent } from './video-input/video-file-upload/video-file-upload.component';
+import { VgCoreModule } from 'videogular2/compiled/core';
+import { VgControlsModule } from 'videogular2/compiled/controls';
+import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
+import {VgBufferingModule} from 'videogular2/compiled/buffering';
+import { AudioPlayerComponent } from './audio-input/audio-player/audio-player.component';
 
 @NgModule({
-  declarations: [InputMenuComponent, AudioInputComponent, VideoInputComponent, TextInputComponent, DocInputComponent, ImageInputComponent],
+  declarations: [InputMenuComponent, AudioInputComponent, VideoInputComponent, TextInputComponent, DocInputComponent, ImageInputComponent,
+  VideoPlayerComponent, VideoFileUploadComponent, AudioPlayerComponent],
   imports: [
     CommonModule,
     InputsRoutingModule,
-    SharedModule
+    SharedModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ]
 })
 export class InputsModule { }

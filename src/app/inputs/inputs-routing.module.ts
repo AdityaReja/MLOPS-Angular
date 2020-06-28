@@ -9,15 +9,15 @@ import { DocInputComponent } from './doc-input/doc-input.component';
 
 const routes: Routes = [
   {
-    path:'', component: InputMenuComponent,
+    path: '', component: InputMenuComponent,
     children: [
-    {path:'', component: AudioInputComponent},
-    {path:'video', component: VideoInputComponent},
-    {path:'text', component: TextInputComponent},
-    {path:'image', component: ImageInputComponent},
-    {path:'doc', component: DocInputComponent}
-  ]
-}
+      { path: '', component: AudioInputComponent },
+      { path: 'video', component: VideoInputComponent },
+      { path: 'text', component: TextInputComponent },
+      { path: 'image', component: ImageInputComponent },
+      { path: 'doc', component: DocInputComponent }
+    ]
+  }
 
 ];
 

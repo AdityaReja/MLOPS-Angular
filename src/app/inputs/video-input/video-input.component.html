@@ -1,1 +1,8 @@
+<div class="row">
 <app-title-divider>Video Feed</app-title-divider>
+</div>
+<div class="row">
+<app-video-file-upload *ngIf="!uploadVideo" (uploaded)="videoUploaded($event)" (srcLocation)="srcVideoLocation($event)">
+</app-video-file-upload>
+<app-video-player *ngIf="uploadVideo" [sourceLocation]='srcVideoLocation'></app-video-player>
+</div>

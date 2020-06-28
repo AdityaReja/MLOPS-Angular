@@ -16,5 +16,5 @@ export class VideoPlayerComponent implements OnInit {
   ngOnInit() {
     this.mediaSrc = this.domSanitizer.bypassSecurityTrustUrl(this.sourceLocation);
   }
-  
+
 }
