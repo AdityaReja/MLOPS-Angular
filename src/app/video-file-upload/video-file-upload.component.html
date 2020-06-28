@@ -1,0 +1,19 @@
+<!-- <ng-template #errorModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Invalid File</h4>
+  </div>
+  <div class="modal-body">
+    <label>This is an invalid file format !!</label>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Close</button>
+  </div>
+</ng-template> -->
+<div class="ui placeholder segment">
+  <div class="ui icon header">
+    <i class="video file outline icon"></i>
+  </div>
+  <div class="ui primary button" (click) = "onUpload()">Upload Video
+      <input type="file" style="display:none" (change)="fileUpload($event,errorModal)" accept="video/*"/>
+  </div>
+</div>
